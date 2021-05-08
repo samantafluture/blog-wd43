@@ -11,11 +11,13 @@
 <body>
     <div class="site">
 
-        <header class="site__header">
+        <header class="site__header header">
 
-            <a href="index.html"><img src="images/logo.webp" alt=""></a>
+            <!-- <a href="index.html"><img src="images/logo.webp" alt=""></a> -->
+
+            <h1 class="header__title"><a href="index.html">Ford - Go Further</a></h1>
           
-            <nav>
+            <nav class="header__nav">
                 <ul class="menu clearfix">
                     <li class="menu__item"><a href="#">Veículos</a></li>
                     <li class="menu__item"><a href="#">Vendas</a></li>
@@ -28,7 +30,65 @@
 
         </header>
 
-        <main class="site__main">principal</main>
+        <main class="site__main main clearfix">
+
+            <div class="main__highlight">
+
+                <figure class="highlight">
+                    <img src="images/f150.jpeg" alt="" class="highlight__image">
+                    <figcaption class="highlight__title">Ford sempre a frente</figcaption>
+                </figure>
+            </div>
+            
+            <div class="main__posts">
+
+                <article class="post">
+                    <h1 class="post__title">Título do Post</h1>
+                    <p class="post__resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore ex nostrum architecto quibusdam? Possimus cum sequi quis, saepe dignissimos est itaque officia nisi nobis, deleniti autem mollitia dolor consequatur!</p>
+                    <p class="post__read-more"><a href="#">Leia Mais</a></p>
+                </article>
+
+                <article class="post">
+                    <h1 class="post__title">Título do Post</h1>
+                    <p class="post__resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore ex nostrum architecto quibusdam? Possimus cum sequi quis, saepe dignissimos est itaque officia nisi nobis, deleniti autem mollitia dolor consequatur!</p>
+                    <p class="post__read-more"><a href="#">Leia Mais</a></p>
+                </article>
+
+                <article class="post">
+                    <h1 class="post__title">Título do Post</h1>
+                    <p class="post__resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore ex nostrum architecto quibusdam? Possimus cum sequi quis, saepe dignissimos est itaque officia nisi nobis, deleniti autem mollitia dolor consequatur!</p>
+                    <p class="post__read-more"><a href="#">Leia Mais</a></p>
+                </article>
+
+                <article class="post">
+                    <h1 class="post__title">Título do Post</h1>
+                    <p class="post__resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore ex nostrum architecto quibusdam? Possimus cum sequi quis, saepe dignissimos est itaque officia nisi nobis, deleniti autem mollitia dolor consequatur!</p>
+                    <p class="post__read-more"><a href="#">Leia Mais</a></p>
+                </article>
+
+            </div>
+
+            <div class="main__sidebar sidebar">
+                <h1 class="sidebar__title">Arquivo</h1>
+                <nav class="sidebar__nav">
+                    <ul class="calendar">
+                        <li class="calendar__month"><a href="">01/2020</a></li>
+                        <li class="calendar__month"><a href="">02/2020</a></li>
+                        <li class="calendar__month"><a href="">03/2020</a></li>
+                        <li class="calendar__month"><a href="">04/2020</a></li>
+                        <li class="calendar__month"><a href="">05/2020</a></li>
+                        <li class="calendar__month"><a href="">06/2020</a></li>
+                        <li class="calendar__month"><a href="">07/2020</a></li>
+                        <li class="calendar__month"><a href="">08/2020</a></li>
+                        <li class="calendar__month"><a href="">09/2020</a></li>
+                        <li class="calendar__month"><a href="">10/2020</a></li>
+                        <li class="calendar__month"><a href="">11/2020</a></li>
+                        <li class="calendar__month"><a href="">12/2020</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
         <footer class="site__footer">rodapé</footer>
     </div>
     <script src="scripts/blog.js"></script>    

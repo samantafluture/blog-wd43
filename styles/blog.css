@@ -1,5 +1,5 @@
 body {
-    background-color: #db9cc8;
+    background-color: silver;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -9,9 +9,9 @@ body {
 
 /* .block */
 .site {
-    border-width: 2px;
+    /* border-width: 2px;
     border-style: solid;
-    border-color: rgb(225, 65, 206);
+    border-color: rgb(225, 65, 206); */
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -20,12 +20,25 @@ body {
 /* .block__element */
 .site__header {
     min-height: 130px;
-    background-color: rgb(150, 227, 231);
+    background-color:white;
     overflow: visible;
 }
 
-    .menu {
-        /* border: 4px solid red; */
+    .header__title {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .header__title a {
+        display: block;
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        background-image: url(../images/logo.webp);
+        background-repeat: no-repeat;
+        background-position: left 24px top 3px;
+        background-size: 170%;
+        text-indent: -9000px; 
     }
 
     .menu__item {
@@ -40,6 +53,10 @@ body {
         text-decoration: none;
     }
 
+    .menu__item:hover {
+        background-color: royalblue;
+    }
+
     .menu__item a {
         color: inherit;
         text-decoration: inherit;
@@ -48,12 +65,116 @@ body {
 
 /* .block__element */
 .site__main {
-    height: 620px;
-    background-color: rgb(235, 208, 135);
+    min-height: 620px;
+    background-color: white);
 }
+
+    .highlight {
+        position: relative;
+    }
+
+    .highlight__image {
+        display: block;
+    }
+
+    .highlight__title {
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 5px;    
+        word-spacing: 5px;
+        background-color: rgba(0, 0, 0, 0.733);
+        color: white;
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        padding-left: 16px;
+        padding-right: 16px;
+        opacity: 1;
+        box-shadow: -1px -1px 40px black;
+    }
+
+    .main__posts {
+        background-color: white;
+        min-height: 600px;
+        width: 75%;
+        float: left;
+    }
+
+    .post {
+        /* border: 2px solid red; */
+        padding-top: 32px;
+        padding-bottom: 0px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    /* .post:nth-child(5) {
+        background-color: green;
+        padding-bottom: 16px;
+    } */
+
+    .post:last-of-type {
+        /* background-color: green; */
+        padding-bottom: 32px;
+    }
+
+    .post__title {
+        font-size: 2em;
+    }
+
+    .post__resume {
+        /* border: 2px solid red; */
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .post__read-more {
+        padding-top: 8px;
+        color: royalblue;
+    }
+
+    .post__read-more:hover {
+        text-decoration: underline;
+    }
+
+    .post__read-more a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    .main__sidebar {
+        background-color:lightgrey;
+        min-height: 703.5px;
+        width: 25%;
+        float: right;
+    }
+
+    .sidebar__title {
+        font-size: 1.5em;
+        padding: 16px 0 0 32px; /* sentido horário */
+    }
+
+    .sidebar__nav {
+        padding: 16px 16px 16px 32px;
+    }
+
+    .calendar__month {
+        line-height: 2;
+        color: royalblue;
+        text-decoration: none;
+    }
+
+    .calendar__month:hover {
+        text-decoration: underline;
+    }
+
+    .calendar__month a {
+        color: inherit;
+        text-decoration: inherit;
+    }
 
 /* .block__element */
 .site__footer {
-    height: 90px;
+    min-height: 90px;
     background-color: rgb(154, 206, 245);
 }
