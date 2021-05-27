@@ -14,6 +14,7 @@
   <table class="pure-table pure-table-bordered">
     <thead>
       <tr>
+        <td>#</td>
         <td>Cliente</td>
         <td>E-mail</td>
         <td>Telefone</td>
@@ -22,19 +23,29 @@
     </thead>
     <tbody>
       <tr>
-        <td>John Doe</td>
-        <td>john@doe.com</td>
-        <td>(11) 9999-9999</td>
-        <td>Brazil</td>
+        <td colspan="5">Carregando...</td>
       </tr>
     </tbody>
   </table>
 
-  <script type="text/template">
+  <!-- template de dados no html Handlebars -->
+  <!-- área para separar o pedaço de html "templatizável" -->
+  <script type="text/template" id="line-table">
+    {{#each customer}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+      <td>{{country}}</td>
+    </tr>
+    {{/each}}
 
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="clientes.js"></script>
+
 </body>
 
 </html>

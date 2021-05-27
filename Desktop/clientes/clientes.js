@@ -34,7 +34,12 @@ const getCustomerSuccess = (customers) => {
 
   // === IMPLEMENTAÇÃO #2
 
+  // usando template engine (Handlebars)
   
+  const lineTable = document.querySelector("#line-table").textContent; // seleciona o html pelo id e textContent -> retorna informação em formato de texto
+  const template = Handlebars.compile(lineTable); // compila e devolve uma função; ou seja, é executável
+
+  ui.table.innerHTML = template({ customer: customers }); // coloca os dados na tela, faz o merge
 
   
   // === IMPLEMENTAÇÃO #1
